@@ -1,0 +1,14 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="northwindSAPUI5_ConsumeOdata.controller.CustomerHeader" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <List noDataText="Drop list items here" id="__list2" items="{/Customers}">
+				        <items>
+				            <StandardListItem type="Navigation" title="{CustomerID}# {ContactName}" description="{Phone}" icon="sap-icon://customer" id="__item6" press="GoToCustomerDetail"/></items>
+				    </List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
